@@ -44,12 +44,11 @@ p {
 }
 
 #restaurant {
-  margin: 30px auto;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: beige;
@@ -74,4 +73,13 @@ p {
 .menu_image {
   width: 100%;
   height: 80%;
+}
+
+header {
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  height: 100px;
 }/*# sourceMappingURL=menu.css.map */

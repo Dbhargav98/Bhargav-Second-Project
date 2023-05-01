@@ -44,12 +44,11 @@ p {
 }
 
 #restaurant {
-  margin: 30px auto;
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: beige;
@@ -87,22 +86,23 @@ header {
 #logo {
   width: 150px;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 .location {
+  width: 100%;
+  background-color: #F5F5F5;
   display: flex;
   flex-direction: row;
-  background-color: #babfbb;
   padding: 20px;
   justify-content: center;
-  width: -moz-available;
+  box-shadow: 5px -5px 10px -10px #404040;
 }
 
 .discription {
   line-height: 40px;
   background-color: aquamarine;
-  width: -moz-available;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,8 +139,7 @@ nav {
 footer {
   color: white;
   background-color: #282828;
-  padding: 20PX;
-  margin-top: 0px;
+  padding: 20px;
 }
 
 footer .logo {
