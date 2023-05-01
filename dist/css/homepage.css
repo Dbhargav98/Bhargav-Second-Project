@@ -134,4 +134,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  color: white;
+  background-color: #282828;
+  padding: 20PX;
+  margin-top: 0px;
+}
+
+footer .logo {
+  margin-left: 40px;
+}
+
+ul {
+  list-style: none;
 }/*# sourceMappingURL=homepage.css.map */
