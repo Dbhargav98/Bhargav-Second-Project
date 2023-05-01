@@ -9,69 +9,99 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" 
      referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="dist/css/menu.csss">
+     <link rel="stylesheet" href="dist/css/menu.css">
+     <link rel="stylesheet" href="dist/css/generic.css">
 </head>
 <body>
     <header>
         <i class="fa-solid fa-arrow-left"></i>
-        <img src="ohmyfood_image/images/logo/ohmyfood@2x.svg" alt="site logo">
+        <h2 class="logo">ohmyfood</h2>
     </header>
-    <img src="ohmyfood_image/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="front image">
-    <div>
-        <h3> The Full Palette</h3><i class="fa-regular fa-heart"></i>
-        <div class="Entrees">
+     <img src="ohmyfood_image/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="front image">
+    <section class="full_menu">
+        <div class="menu_name">
+            <h1> The Full Palette</h1>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="entrees">
             <h4>ENTREES</h4>
-            <div>
+            <div class="card">
                 <h4>Escargot</h4>
-                with southern French spices  <strong>25 &euro;</strong>
+                <div class="card_description">
+                  <div>with southern French spices </div> 
+                  <div><strong>25 €</strong></div>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <h4>Duck Foie Gras</h4>
-                With black truffle shavings <strong>35 &euro;</strong>
+                <div class="card_description">
+                  <div>With black truffle shavings</div>
+                  <div><strong>35 €</strong></div>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <h4>Fried egg</h4>
-                Seasoned with truffle cream and ...  <strong>20 &euro;</strong>
+                <div class="card_description">
+                   <div>Seasoned with truffle cream and ...</div>
+                   <div><strong>20 €</strong></div>
             </div>
 
         </div>
         <div class="main-dish">
             <h4>MAIN DISH</h4>
-            <div>
+            <div class="card">
                 <h4>Herb-Encrusted Steak</h4>
-                with delicately sliced and Seasoned veg... <strong>40 &euro;</strong>
+                <div class="card_description">
+                   <div>with delicately sliced and Seasoned veg...</div>
+                   <div><strong>40 €</strong></div>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <h4>Ox Tail Shepard's Pie</h4>
-                with black truffle and pureed parsnips  <strong>35 &euro;</strong>
+                <div class="card_description">
+                   <div> with black truffle and pureed parsnips</div>
+                   <div><strong>35 €</strong></div>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <h4>Filet of Sole</h4>
-                with citrus dressing <strong>44 &euro;</strong>
+                <div class="card_description">
+                <div>with citrus dressing</div>
+                <div><strong>44 €</strong></div>
             </div>
 
         </div>
         <div class="desserts">
             <h4>DESSERTS</h4>
-            <div>
+            <div class="card">
                 <h4>Paris-Brest</h4>
-                Revisted <strong> 18 &euro;</strong>
+                <div class="card_description">
+                   <div> Revisted </div>
+                   <div><strong> 18 €</strong></div>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <h4>Chocolate Macaroons</h4>
-                with vanilla ice cream  <strong>22 &euro;</strong>
+                <div class="card_description">
+                  <div> with vanilla ice cream</div>
+                  <div> <strong>22 €</strong></div>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <h4>Chocolate Mousse</h4>
-                with spices and black truffle <strong>23 &euro;</strong>
+                <div class="card_description">
+                 <div> with spices and black truffle </div>
+                  <div> <strong>23 €</strong></div>
+                </div>
             </div>
 
         </div>
-        order
-    </div>
+        <div class="order_button">order</div>
+    </section>
     <footer>
+        <h4 class="logo">ohmyfood</h4>
         <ul>
-           <li><img src="ohmyfood_image/images/logo/ohmyfood.png" alt="logo"></li>
+           
            <li><i class="fa-solid fa-utensils"></i> Suggest a restaurant</li>
            <li><i class="fa-solid fa-handshake-angle"></i> Become a partner</li>
            <li>legal</li>
