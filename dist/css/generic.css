@@ -12,12 +12,6 @@ header {
   font-family: "Shrikhand";
 }
 
-#logo {
-  width: 150px;
-  justify-content: center;
-  padding: 30px;
-}
-
 body {
   width: 100%;
 }
@@ -45,4 +39,51 @@ footer .logo {
 
 ul {
   list-style: none;
+}
+
+.loader {
+  position: fixed;
+  z-index: 2;
+  font-size: 6em;
+  color: grey;
+  top: 40%;
+  left: 40%;
+  animation: spin ease-in 1s infinite, fadeOut ease-out 3s 1 forwards;
+}
+
+.heart--red {
+  color: red;
+  opacity: 0%;
+}
+
+.heart-wrap {
+  display: grid;
+}
+
+.heart-wrap:active .heart--red {
+  animation: fadeOut 1s 1 forwards reverse;
+}
+
+.heart-wrap i {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+@keyframes fadeOut {
+  0% {
+    visibility: visible;
+    opacity: 100%;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=generic.css.map */

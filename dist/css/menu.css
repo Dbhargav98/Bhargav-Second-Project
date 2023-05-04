@@ -11,6 +11,16 @@ p {
   font-family: "Roboto";
 }
 
+.logo {
+  font-family: "Shrikhand";
+  margin-left: 25%;
+}
+
+.logo_footer {
+  margin: 20px;
+  font-family: "Shrikhand";
+}
+
 img {
   width: 100%;
   height: 250px;
@@ -28,10 +38,6 @@ img {
 .retutn {
   margin-left: 20px;
   border: 2px solid red;
-}
-
-.logo {
-  margin-left: 25%;
 }
 
 .full_menu {
@@ -88,4 +94,18 @@ img {
   margin-bottom: 60px;
   font-weight: bold;
   box-shadow: -2px 10px 23px -5px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  color: white;
+  background-color: #282828;
+  padding: 20px;
+}
+
+footer .logo {
+  margin-left: 40px;
+}
+
+ul {
+  list-style: none;
 }/*# sourceMappingURL=menu.css.map */

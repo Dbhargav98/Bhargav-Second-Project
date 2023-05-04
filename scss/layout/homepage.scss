@@ -1,7 +1,7 @@
 @import "generic.scss";
 
 
-.location{
+.location {
     width: 100%;
     background-color: #F5F5F5;
     display: flex;
@@ -10,6 +10,7 @@
     justify-content: center;
     box-shadow: 5px -5px 10px -10px #404040;
 }
+
 .PrimaryBtn {
     background: linear-gradient($secondaryColor, $primaryColor);
     border-radius: 20px;
@@ -33,14 +34,27 @@
     padding: 10% 3%;
 }
 
+.sectionPad,
+.discription,
+.restaurant {
+    opacity: 0%;
+    animation: fadeOut 4s 1 forwards reverse;
+}
+
 .discription p {
     text-align: center;
 }
 
 nav {
-    background-color: cadetblue;
+    background-color: rgb(209, 238, 239);
     width: 100%;
     align-content: center;
+    text-align: center;
+    align-items: center;
+}
+.sectionPad{
+    align-items: center;
+    text-align: center;
 }
 
 .navigation_name {
@@ -60,6 +74,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 #restaurant {
     padding: 10px;
     width: 100%;
@@ -69,7 +84,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: beige;
-    
+
 }
 
 .restaurant_card {
