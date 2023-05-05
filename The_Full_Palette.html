@@ -14,10 +14,8 @@
 </head>
 <body>
     <header class="menu_header">
-        <div class="return">
-            <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <h2 class="logo">ohmyfood</h2>
+            <i class="fa-solid fa-arrow-left return_arrow"></i>
+        <h1 class="logo">ohmyfood</h1>
     </header>
      <img src="ohmyfood_image/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="front image">
     <section class="full_menu">
@@ -25,7 +23,8 @@
             <h1> The Full Palette</h1>
             <i class="fa-regular fa-heart"></i>
         </div>
-        <div class="entrees">
+
+        <div class="entrees" id="type_1">
             <h4 class="menu_type" >ENTREES</h4>
             <div class="card">
                 <h4>Escargot</h4>
@@ -49,7 +48,7 @@
             </div>
 
         </div>
-        <div class="main-dish">
+        <div class="main-dish" id="type_2">
             <h4 class="menu_type">MAIN DISH</h4>
             <div class="card">
                 <h4>Herb-Encrusted Steak</h4>
@@ -73,7 +72,7 @@
             </div>
 
         </div>
-        <div class="desserts">
+        <div class="desserts" id="type_3">
             <h4 class="menu_type">DESSERTS</h4>
             <div class="card">
                 <h4>Paris-Brest</h4>
@@ -100,6 +99,9 @@
         </div>
         <div class="order_button">order</div>
     </section>
+    <div class="loader">
+        <i class="fa-solid fa-circle-notch"></i>
+    </div>
     <footer>
         <h4 class="logo_footer">ohmyfood</h4>
         <ul>

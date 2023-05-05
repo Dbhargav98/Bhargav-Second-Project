@@ -88,8 +88,8 @@ ul {
   }
 }
 .location {
-  width: 100%;
-  background-color: #F5F5F5;
+  width: 97.5%;
+  background-color: #E0E0E0;
   display: flex;
   flex-direction: row;
   padding: 20px;
@@ -111,7 +111,6 @@ ul {
 .discription {
   line-height: 40px;
   background-color: #F5F5F5;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,38 +128,59 @@ ul {
   text-align: center;
 }
 
-nav {
+.sectionPad {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(209, 238, 239);
   width: 100%;
-  align-content: center;
-  text-align: center;
-  align-items: center;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.sectionPad {
-  align-items: center;
-  text-align: center;
-}
-
-.navigation_name {
+.work_nav {
   display: flex;
-  flex-direction: row;
-  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
-.navigation_name h5 {
+.nav_button {
+  padding: 25px;
+  margin: 20px;
+  position: relative;
+  text-align: left;
+  border-radius: 15px;
+  border: none;
+  width: 90%;
+  height: 80px;
+}
+
+span {
+  display: inline-block;
+}
+
+.nav_number {
   background-color: #9356DC;
   border-radius: 50%;
-  padding: 20px;
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 5px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding-top: 3px;
 }
 
-#restaurant {
+.nav_icon {
+  color: #9356DC;
+  width: 30px;
+  padding: 0 10px;
+}
+
+.restaurant {
   padding: 10px;
+  padding-top: 40px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
