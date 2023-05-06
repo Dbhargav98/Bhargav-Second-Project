@@ -1,116 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=768px, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>The Full Palette</title>
-     <!--link to Icons-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
-     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" 
-     referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="dist/css/menu.css">
-     
+    <!--link to Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/menu.css">
+
 </head>
+
 <body>
     <header class="menu_header">
-            <i class="fa-solid fa-arrow-left return_arrow"></i>
+        <a href="./main.html"><i class="fa-solid fa-arrow-left return_arrow"></i></a>
         <h1 class="logo">ohmyfood</h1>
     </header>
-     <img src="ohmyfood_image/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="front image">
+    <img src="ohmyfood_image/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="front image">
+
     <section class="full_menu">
         <div class="restaurant_name">
-            <h1> The Full Palette</h1>
-            <i class="fa-regular fa-heart"></i>
+            <div id="restaurant_title"> The Full Palette</div>
+            <div class="heart-wrap">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart heart--red"></i>
+            </div>
         </div>
 
-        <div class="entrees" id="type_1">
-            <h4 class="menu_type" >ENTREES</h4>
-            <div class="card">
-                <h4>Escargot</h4>
+        <div class="menu_name">
+            <h4 class="menu_type">ENTREES</h4>
+            <div class="card" id="card1">
                 <div class="card_description">
-                  <div>with southern French spices </div> 
-                  <div><strong>25 €</strong></div>
+                    <h4>Escargot</h4>
+                    <div>with southern French spices </div>
+                    <div class="price"><strong>25 €</strong></div>
                 </div>
-            </div>
-            <div class="card">
-                <h4>Duck Foie Gras</h4>
-                <div class="card_description">
-                  <div>With black truffle shavings</div>
-                  <div><strong>35 €</strong></div>
-                </div>
-            </div>
-            <div class="card">
-                <h4>Fried egg</h4>
-                <div class="card_description">
-                   <div>Seasoned with truffle cream and ...</div>
-                   <div><strong>20 €</strong></div>
-            </div>
-
-        </div>
-        <div class="main-dish" id="type_2">
-            <h4 class="menu_type">MAIN DISH</h4>
-            <div class="card">
-                <h4>Herb-Encrusted Steak</h4>
-                <div class="card_description">
-                   <div>with delicately sliced and Seasoned veg...</div>
-                   <div><strong>40 €</strong></div>
-                </div>
-            </div>
-            <div class="card">
-                <h4>Ox Tail Shepard's Pie</h4>
-                <div class="card_description">
-                   <div> with black truffle and pureed parsnips</div>
-                   <div><strong>35 €</strong></div>
-                </div>
-            </div>
-            <div class="card">
-                <h4>Filet of Sole</h4>
-                <div class="card_description">
-                <div>with citrus dressing</div>
-                <div><strong>44 €</strong></div>
-            </div>
-
-        </div>
-        <div class="desserts" id="type_3">
-            <h4 class="menu_type">DESSERTS</h4>
-            <div class="card">
-                <h4>Paris-Brest</h4>
-                <div class="card_description">
-                   <div> Revisted </div>
-                   <div><strong> 18 €</strong></div>
-                </div>
-            </div>
-            <div class="card">
-                <h4>Chocolate Macaroons</h4>
-                <div class="card_description">
-                  <div> with vanilla ice cream</div>
-                  <div> <strong>22 €</strong></div>
-                </div>
-            </div>
-            <div class="card">
-                <h4>Chocolate Mousse</h4>
-                <div class="card_description">
-                 <div> with spices and black truffle </div>
-                  <div> <strong>23 €</strong></div>
+                <div class="TickWrapper">
+                    <i class="fa-solid fa-circle-check"></i>
                 </div>
             </div>
 
-        </div>
-        <div class="order_button">order</div>
+            <div class="card" id="card2">
+                <div class="card_description">
+                    <h4>Duck Foie Gras</h4>
+                    <div>With black truffle shavings</div>
+                    <div><strong>35 €</strong></div>
+                </div>
+                <div class="TickWrapper">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+            </div> 
+
+            <div class="card" id="card3">
+                <div class="card_description">
+                    <h4>Fried egg</h4>
+                    <div>Seasoned with truffle cream and ...</div>
+                    <div><strong>20 €</strong></div>
+                </div>
+                <div class="TickWrapper">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+            </div>
+            <div class="menu_name">
+                <h4 class="menu_type">MAIN DISH</h4>
+                <div class="card" id="card4">
+                    
+                    <div class="card_description">
+                        <h4>Herb-Encrusted Steak</h4>
+                        <div>with delicately sliced and Seasoned veg...</div>
+                        <div><strong>40 €</strong></div>
+                    </div>
+                    <div class="TickWrapper">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+
+                <div class="card" id="card5">
+                    <div class="card_description">
+                        <h4>Ox Tail Shepard's Pie</h4>
+                        <div> with black truffle and pureed parsnips</div>
+                        <div><strong>35 €</strong></div>
+                    </div>
+                    <div class="TickWrapper">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+
+                <div class="card" id="card6">
+                    <div class="card_description">
+                        <h4>Filet of Sole</h4>
+                        <div>with citrus dressing</div>
+                        <div><strong>44 €</strong></div>
+                    </div>
+                    <div class="TickWrapper">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+
+                <div class="menu_name">
+                    <h4 class="menu_type">DESSERTS</h4>
+
+                    <div class="card" id="card7">
+                        <div class="card_description">
+                            <h4>Paris-Brest</h4>
+                            <div> Revisted </div>
+                            <div><strong> 18 €</strong></div>
+                        </div>
+                        <div class="TickWrapper">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card8">
+                        <div class="card_description">
+                            <h4>Chocolate Macaroons</h4>
+                            <div> with vanilla ice cream</div>
+                            <div> <strong>22 €</strong></div>
+                        </div>
+                        <div class="TickWrapper">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card9">
+                        
+                        <div class="card_description">
+                            <h4>Chocolate Mousse</h4>
+                            <div> with spices and black truffle </div>
+                            <div> <strong>23 €</strong></div>
+                        </div>
+                        <div class="TickWrapper">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order_button">order</div>
     </section>
     <div class="loader">
         <i class="fa-solid fa-circle-notch"></i>
     </div>
     <footer>
-        <h4 class="logo_footer">ohmyfood</h4>
+        <h4 class="footer_logo">ohmyfood</h4>
         <ul>
-           
-           <li><i class="fa-solid fa-utensils"></i> Suggest a restaurant</li>
-           <li><i class="fa-solid fa-handshake-angle"></i> Become a partner</li>
-           <li>legal</li>
-           <li>contact</li>
+
+            <li><a href="#"><i class="fa-solid fa-utensils"></i> Suggest a restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Become a partner</a></li>
+            <li><a href="#">legal</a></li>
+            <li><a href="mailto:contact@goodie.com">contact</a></li> 
         </ul>
     </footer>
 </body>
+
 </html>

@@ -1,3 +1,5 @@
+@import "normalise.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -5,6 +7,15 @@ $primaryColor: #9356DC;
 $secondaryColor: #FF79DA;
 $tertiaryColor: #99E2D0;
 $lightGray: #babfbb;
+
+html {
+    width: fit-content;
+}
+
+body {
+    margin: 0px;
+}
+
 
 header {
     display: flex;
@@ -16,9 +27,16 @@ header {
 
 .logo {
     font-family: 'Shrikhand';
+    font-size: xx-large;
+    padding-top:0.70em;
+    padding-bottom: 0.70em; 
 }
 
-
+.footer_logo{
+    font-family: 'Shrikhand';
+    font-size:large;
+    margin-left: 40px;
+}
 body {
     width: 100%;
 }
@@ -38,17 +56,21 @@ footer {
     color: white;
     background-color: #282828;
     padding: 20px;
+    
 
 }
 
-footer .logo {
-    margin-left: 40px;
-}
+
 
 ul {
     list-style: none;
 }
-
+li {
+    a {
+    text-decoration: none;
+    color: white;
+  }
+}
 .loader {
     position: fixed;
     z-index: 2;
@@ -59,6 +81,17 @@ ul {
     animation: spin ease-in 1s infinite, fadeOut ease-out 3s 1 forwards;
 }
 
+img {
+    object-fit: cover;
+}
+.heart--red {
+    color: red;
+    opacity: 0%;
+    font-size: x-large;
+}
+.fa-heart{
+    font-size: x-large;
+}
 .heart--red {
     color: red;
     opacity: 0%;
@@ -68,18 +101,18 @@ ul {
     display: grid;
 }
 
-.heart-wrap:active .heart--red{
+.heart-wrap:active .heart--red {
     animation: fadeOut 1s 1 forwards reverse;
 }
-
-
 
 .heart-wrap i {
     grid-row: 1;
     grid-column: 1;
 }
 
-
+.heart-wrap:hover .heart--red {
+    opacity: 100%;
+}
 
 
 @keyframes fadeOut {

@@ -1,9 +1,12 @@
 @import "generic.scss";
 
-
+a {
+    text-decoration: none;
+    color: black;
+}
 .location {
-    width: 97.5%;
-    background-color:#E0E0E0;
+    width: 93%;
+    background-color: #E0E0E0;
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -22,6 +25,10 @@
     -webkit-box-shadow: -2px 10px 23px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 10px 23px -5px rgba(0, 0, 0, 0.75);
     box-shadow: -2px 10px 23px -5px rgba(0, 0, 0, 0.75);
+}
+
+.PrimaryBtn:hover {
+    filter: brightness(120%);
 }
 
 .discription {
@@ -44,21 +51,22 @@
     text-align: center;
 }
 
-.sectionPad{
+.sectionPad {
     display: flex;
     flex-direction: column;
     background-color: rgb(209, 238, 239);
-    width: 100%;
     padding: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.work_nav{
+.work_nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    gap: 2em;
+    padding-top: 10%;
+
 }
 
 .nav_button {
@@ -68,11 +76,20 @@
     text-align: left;
     border-radius: 15px;
     border: none;
-    width: 90%;
+    width: 80%;
     height: 80px;
+}
+.nav_button:hover{
+    background-color: rgb(235, 221, 247);
+}
+.nav_icon:hover{
+    color: $primaryColor;
 }
 span {
     display: inline-block;
+}
+.nav_button i{
+    font-size: 1.4em;
 }
 
 .nav_number {
@@ -85,15 +102,17 @@ span {
     position: absolute;
     text-align: center;
     padding-top: 3px;
+    left: -4%;
 }
-.nav_icon{
-    color: $primaryColor;
+
+.nav_icon {
     width: 30px;
     padding: 0 10px;
 }
+
 .restaurant {
     padding: 10px;
-    padding-top:40px;
+    padding-top: 40px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -106,7 +125,7 @@ span {
 
 .restaurant_card {
     border-radius: 24px;
-    height: 17em;
+    height: 18em;
     width: 95%;
     overflow: hidden;
     margin: 20px auto;
