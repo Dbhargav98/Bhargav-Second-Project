@@ -8,6 +8,9 @@ $secondaryColor: #FF79DA;
 $tertiaryColor: #99E2D0;
 $lightGray: #babfbb;
 
+$font_title: 'Shrikhand', sans serif;
+$font_text: 'Roboto', sans serif;
+
 html {
     width: fit-content;
 }
@@ -17,23 +20,15 @@ body {
 }
 
 
-header {
-    display: flex;
-    flex-direction: column;
-    width: -moz-available;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo {
-    font-family: 'Shrikhand';
+    font-family: $font_title ;
     font-size: xx-large;
     padding-top:0.70em;
     padding-bottom: 0.70em; 
 }
 
 .footer_logo{
-    font-family: 'Shrikhand';
+    font-family: $font_title;
     font-size:large;
     margin-left: 40px;
 }
@@ -49,14 +44,14 @@ h5,
 h6,
 p {
     margin: 0px;
-    font-family: 'Roboto';
+    font-family: $font_text;
 }
 
 footer {
     color: white;
     background-color: #282828;
     padding: 20px;
-    
+    font-family: "Roboto", sans serif;
 
 }
 
@@ -70,6 +65,9 @@ li {
     text-decoration: none;
     color: white;
   }
+}
+li i{
+    margin-right: 10px;
 }
 .loader {
     position: fixed;

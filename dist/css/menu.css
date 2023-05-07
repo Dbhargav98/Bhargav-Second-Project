@@ -349,23 +349,15 @@ body {
   margin: 0px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  width: -moz-available;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans serif;
   font-size: xx-large;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
 }
 
 .footer_logo {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans serif;
   font-size: large;
   margin-left: 40px;
 }
@@ -382,13 +374,14 @@ h5,
 h6,
 p {
   margin: 0px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans serif;
 }
 
 footer {
   color: white;
   background-color: #282828;
   padding: 20px;
+  font-family: "Roboto", sans serif;
 }
 
 ul {
@@ -398,6 +391,10 @@ ul {
 li a {
   text-decoration: none;
   color: white;
+}
+
+li i {
+  margin-right: 10px;
 }
 
 .loader {
@@ -805,25 +802,27 @@ template {
   display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0px;
-  font-family: "Roboto";
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
-.logo {
-  font-family: "Shrikhand";
-  justify-content: center;
+.return_arrow {
+  font-weight: bold;
+  position: absolute;
+  margin-left: 25px;
+  padding-top: 10px;
+  font-size: x-large;
+}
+
+.menu_logo {
+  font-family: "Shrikhand", sans serif;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.menu_header div:nth-child(2) {
+  align-items: flex-end;
 }
 
 img {
@@ -832,25 +831,10 @@ img {
   margin: 0px;
 }
 
-.menu_header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
-
 .menu_name {
   gap: 1em;
   display: flex;
   flex-wrap: wrap;
-}
-
-.return_arrow {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-weight: bold;
-  padding-left: 10px;
 }
 
 .full_menu {
@@ -872,7 +856,7 @@ img {
 }
 
 #restaurant_title {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans serif;
   font-weight: bold;
   font-size: xx-large;
 }
@@ -892,7 +876,7 @@ img {
   background-color: #fff;
   border-radius: 25px;
   display: flex;
-  height: 4em;
+  height: 4.5em;
   width: 100%;
   overflow: hidden;
 }

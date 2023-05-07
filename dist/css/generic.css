@@ -349,23 +349,15 @@ body {
   margin: 0px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  width: -moz-available;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans serif;
   font-size: xx-large;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
 }
 
 .footer_logo {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans serif;
   font-size: large;
   margin-left: 40px;
 }
@@ -382,13 +374,14 @@ h5,
 h6,
 p {
   margin: 0px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans serif;
 }
 
 footer {
   color: white;
   background-color: #282828;
   padding: 20px;
+  font-family: "Roboto", sans serif;
 }
 
 ul {
@@ -398,6 +391,10 @@ ul {
 li a {
   text-decoration: none;
   color: white;
+}
+
+li i {
+  margin-right: 10px;
 }
 
 .loader {
