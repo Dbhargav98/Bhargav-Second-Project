@@ -340,11 +340,6 @@ template {
   display: none;
 }
 
-html {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 body {
   margin: 0px;
 }
@@ -556,9 +551,9 @@ header {
 
 .nav_button:hover {
   background-color: rgb(235, 221, 247);
+  color: #9356DC;
 }
-
-.nav_icon:hover {
+.nav_button:hover ._icon:hover {
   color: #9356DC;
 }
 
@@ -609,11 +604,6 @@ span {
   margin: 20px auto;
   background-color: #fff;
   position: relative;
-}
-
-.restaurant_card:hover {
-  transform: scale(1.05);
-  transition-delay: 0.5s;
 }
 
 .new_label {

@@ -92,12 +92,15 @@ header {
     height: 80px;
     box-shadow: 3px 3px 3px #808080;
 }
-.nav_button:hover{
+.nav_button:hover{      
     background-color: rgb(235, 221, 247);
-}
-.nav_icon:hover{
     color: $primaryColor;
+    ._icon:hover{
+        color: $primaryColor;
+    }
+    
 }
+
 span {
     display: inline-block;
 }
@@ -146,10 +149,7 @@ span {
     background-color: #fff;
     position: relative;
 }
-.restaurant_card:hover{
-    transform: scale(1.05);
-    transition-delay: 0.5s;
-}
+
 .new_label{
     width: 110px;
     background-color: $tertiaryColor;

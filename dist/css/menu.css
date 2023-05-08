@@ -340,11 +340,6 @@ template {
   display: none;
 }
 
-html {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 body {
   margin: 0px;
 }
@@ -888,6 +883,14 @@ img {
   justify-content: space-between;
   gap: 0.5em;
   padding: 0.75em;
+  width: -webkit-fill-available;
+}
+
+.card_description p {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card_description h4 {
@@ -1026,4 +1029,5 @@ img {
 
 .card:hover .TickWrapper {
   animation: slideLeft 1s forwards 1;
+  display: flex;
 }/*# sourceMappingURL=menu.css.map */
