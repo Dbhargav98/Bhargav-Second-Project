@@ -549,22 +549,6 @@ header {
   box-shadow: 3px 3px 3px #808080;
 }
 
-.nav_button:hover {
-  background-color: rgb(235, 221, 247);
-  color: #9356DC;
-}
-.nav_button:hover ._icon:hover {
-  color: #9356DC;
-}
-
-span {
-  display: inline-block;
-}
-
-.nav_button i {
-  font-size: 1.4em;
-}
-
 .nav_number {
   background-color: #9356DC;
   border-radius: 50%;
@@ -582,6 +566,22 @@ span {
 .nav_icon {
   width: 30px;
   padding: 0 10px;
+}
+
+.nav_button:hover {
+  background-color: rgb(235, 221, 247);
+  color: #9356DC;
+}
+.nav_button:hover ._icon:hover {
+  color: #9356DC;
+}
+
+span {
+  display: inline-block;
+}
+
+.nav_button i {
+  font-size: 1.4em;
 }
 
 .restaurant {

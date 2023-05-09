@@ -92,22 +92,6 @@ header {
     height: 80px;
     box-shadow: 3px 3px 3px #808080;
 }
-.nav_button:hover{      
-    background-color: rgb(235, 221, 247);
-    color: $primaryColor;
-    ._icon:hover{
-        color: $primaryColor;
-    }
-    
-}
-
-span {
-    display: inline-block;
-}
-.nav_button i{
-    font-size: 1.4em;
-}
-
 .nav_number {
     background-color: $primaryColor;
     border-radius: 50%;
@@ -126,6 +110,23 @@ span {
     width: 30px;
     padding: 0 10px;
 }
+
+.nav_button:hover{      
+    background-color: rgb(235, 221, 247);
+    color: $primaryColor;
+    ._icon:hover{
+        color: $primaryColor;
+    }
+    
+}
+
+span {
+    display: inline-block;
+}
+.nav_button i{
+    font-size: 1.4em;
+}
+
 
 .restaurant {
     padding: 10px;

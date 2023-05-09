@@ -92,26 +92,55 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.5em;
-    padding: 0.75em;
-    width: -webkit-fill-available;
+    padding: 0.75em 0em 0.75em 0.75em;
+    width: 70%;
 
 }
 
 .card_description p {
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.card_description h4 {
-    width: 100%;
+
+.price{
+    position: relative;
+    width:25%;
+    flex: none;
+    
+}
+.price span{
+    position: absolute;
+    top:50%;
+    left:60%;
+    
+}
+.TickWrapper {
+    width: 20%;
+    height: 100%;
+    background-color: $tertiaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    color: white;
+    transform: translateX(100%);
 }
 
-.price {
-    padding-right: 0.75em;
+.card:hover .TickWrapper i {
+    animation: spin 1s forwards 1;
 }
 
+.card:hover .TickWrapper {
+    animation: slideLeft 1s forwards 1;
+    display: flex;
+}
+.card:hover .card_description{
+    width: 55%; 
+    transition: width 1000ms, background-color 1500ms;
+}
 .order_button {
     background: linear-gradient($secondaryColor, $primaryColor);
     border-radius: 20px;
@@ -235,23 +264,3 @@ img {
 
 
 
-.TickWrapper {
-    width: 20%;
-    height: 100%;
-    background-color: $tertiaryColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6em;
-    color: white;
-    transform: translateX(100%);
-}
-
-.card:hover .TickWrapper i {
-    animation: spin 1s forwards 1;
-}
-
-.card:hover .TickWrapper {
-    animation: slideLeft 1s forwards 1;
-    display: flex;
-}
