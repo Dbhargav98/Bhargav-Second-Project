@@ -544,7 +544,7 @@ header {
   text-align: left;
   border-radius: 20px;
   border: none;
-  width: 90%;
+  width: 80%;
   height: 80px;
   box-shadow: 3px 3px 3px #808080;
 }
@@ -628,4 +628,38 @@ span {
 .menu_image {
   width: 100%;
   height: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 60px;
+  }
+  .nav_button {
+    width: 70%;
+  }
+  .discription {
+    font-size: 150%;
+  }
+  .discription p {
+    line-height: 1.2em;
+  }
+  .restaurant_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+    margin: 20px;
+  }
+  .restaurant_card {
+    width: 45%;
+    margin: 20px auto;
+  }
+  .footer_logo {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav_button {
+    width: 27%;
+  }
 }/*# sourceMappingURL=homepage.css.map */
