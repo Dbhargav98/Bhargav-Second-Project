@@ -426,17 +426,14 @@ img {
   display: grid;
 }
 
-.heart-wrap:active .heart--red {
+.heart-wrap:active .heart--red,
+.heart-wrap:hover .heart--red {
   animation: fadeOut 1s 1 forwards reverse;
 }
 
 .heart-wrap i {
   grid-row: 1;
   grid-column: 1;
-}
-
-.heart-wrap:hover .heart--red {
-  opacity: 100%;
 }
 
 @keyframes fadeOut {
@@ -922,6 +919,7 @@ img {
   font-size: 1.6em;
   color: white;
   transform: translateX(100%);
+  display: none;
 }
 
 .card:hover .TickWrapper i {
