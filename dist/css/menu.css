@@ -1073,7 +1073,6 @@ img {
   }
   .card {
     width: 75%;
-    max-width: 500px;
   }
   .order_button {
     width: 150px;
@@ -1083,7 +1082,6 @@ img {
 @media screen and (min-width: 992px) {
   .card {
     width: 31.5%;
-    min-width: 311px;
   }
   .menu_cards {
     flex-direction: row;
