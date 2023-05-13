@@ -13,68 +13,152 @@
 </head>
 <body>
     <header class="menu_header">
-        <a href="./main.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="./main.html"><i class="fa-solid fa-arrow-left return_arrow"></i></a>
         <h1 class="menu_logo">ohmyfood</h1>
     </header>
 
     <img src="ohmyfood_image/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="front image">
-    <div>
-        <h3> Le Gourmand</h3><i class="fa-regular fa-heart"></i>
-        <div class="Entrees">
-            <h4>ENTREES</h4>
-            <div>
-                <h4>Tuna Carpaccio</h4>
-                Seasoned with yuzu<strong>25 &euro;</strong>
+    <section class="full_menu">
+        <div class="restaurant_name">
+            <div id="restaurant_title">Le Gourmand</div>
+            <div class="heart-wrap">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart heart--red"></i>
             </div>
-            <div>
-                <h4>Crunchy Lobster Croquets</h4>
-                With seasonal vegetable <strong>35 &euro;</strong>
-            </div>
-            <div>
-                <h4>Mushroom soup</h4>
-                With truffles  <strong>20 &euro;</strong>
-            </div>
-        </div>
-        <div class="main-dish">
-            <h4>MAIN DISH</h4>
-            <div>
-                <h4>Roast Chicken with Provincal Herbs</h4>
-                With truffle cream  <strong>40 &euro;</strong>
-            </div>
-            <div>
-                <h4>Roasted Lobster</h4>
-                With seasonal vegetables  <strong>35 &euro;</strong>
-            </div>
-            <div>
-                <h4>Angust Beef Ribs</h4>
-                With mashed parshnips  <strong> 44 &euro;</strong>
-            </div>
-        </div>
-        <div class="desserts">
-            <h4>DESSERTS</h4>
-            <div>
-                <h4>Assorted Dessert Plate</h4>
-                Chef's choice  <strong> 18 &euro;</strong>
-            </div>
-            <div>
-                <h4>Crēme brulēe</h4>
-                Revisited  <strong>22 &euro;</strong>
-            </div>
-            <div>
-                <h4>Tiramisu</h4>
-                With hazelnuts <strong> 23 &euro;</strong>
-            </div>
-        </div>
-        Order
+         </div>
+
+        <div class="menu_name">
+             <h4 class="menu_type">ENTREES</h4>
+
+            <div class="menu_cards">
+               
+              <div class="card" id="card1">
+                 <div class="card_description">
+                    <h4 class="course__name">Tuna Carpaccio</h4>
+                    <p class="course__description">Seasoned with yuzu</p>
+                 </div>
+                 <p class="price"><span>25€</span></p>
+                 <div class="TickWrapper">
+                    <i class="fa-solid fa-circle-check checkmark"></i>
+                 </div>
+              </div>
+
+              <div class="card" id="card2">
+                 <div class="card_description">
+                    <h4>Crunchy Lobster Croquets</h4>
+                    <p>With seasonal vegetable</p>
+                 </div>
+                 <p class="price"><span>35€</span></p>
+                 <div class="TickWrapper">
+                    <i class="fa-solid fa-circle-check checkmark"></i>
+                 </div>
+              </div> 
+
+              <div class="card" id="card3">
+                 <div class="card_description">
+                    <h4>Mushroom soup</h4>
+                    <p>With truffles</p> 
+                 </div>
+                  <p class="price"><span>20€</span></p>
+                 <div class="TickWrapper">
+                    <i class="fa-solid fa-circle-check checkmark"></i>
+                 </div>
+              </div>
+          </div>
+          
+            <div class="menu_name">
+                <h4 class="menu_type">MAIN DISH</h4>
+
+              <div class="menu_cards">
+                  <div class="card" id="card4">
+                    <div class="card_description">
+                        <h4>Roast Chicken with Provincal Herbs</h4>
+                        <p>With truffle cream</p>
+                    </div>
+                    <p class="price"> <span>40€</span></p>
+                    <div class="TickWrapper">
+                        <i class="fa-solid fa-circle-check checkmark"></i>
+                    </div>
+                 </div>
+
+                 <div class="card" id="card5">
+                    <div class="card_description">
+                        <h4>Roasted Lobster</h4>
+                        <p>With seasonal vegetables</p>  
+                    </div>
+                    <p class="price"><span>35 €</span></p>
+                    <div class="TickWrapper">
+                        <i class="fa-solid fa-circle-check checkmark"></i>
+                    </div>
+                 </div>
+
+                 <div class="card" id="card6">
+                    <div class="card_description">
+                        <h4>Angust Beef Ribs</h4>
+                        <p>With mashed parshnips</p>   
+                    </div>
+                    <p class="price"><span>44 €</span></p>
+                    <div class="TickWrapper">
+                        <i class="fa-solid fa-circle-check checkmark"></i>
+                    </div>
+                </div>
+              </div>
+
+                <div class="menu_name">
+                    <h4 class="menu_type">DESSERTS</h4>
+                  <div class="menu_cards">
+                    <div class="card" id="card7">
+                        <div class="card_description">
+                            <h4>Assorted Dessert Plate</h4>
+                            <p>Chef's choice</p> 
+                        </div>
+                        <p class="price"><span>18 €</span></p>
+                        <div class="TickWrapper">
+                            <i class="fa-solid fa-circle-check checkmark "></i>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card8">
+                        <div class="card_description">
+                            <h4>Crēme brulēe</h4>
+                            <p>Revisited</p>    
+                        </div>
+                        <p class="price"><span>22 €</span></p>
+                        <div class="TickWrapper">
+                            <i class="fa-solid fa-circle-check checkmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card9">   
+                        <div class="card_description">
+                            <h4>Tiramisu</h4>
+                             <p>With hazelnuts</p>
+                        </div>
+                        <p class="price"><span>23 €</span></p>
+                        <div class="TickWrapper">
+                            <i class="fa-solid fa-circle-check checkmark"></i>
+                        </div>
+                    </div>
+                  </div>
+          </div>
+
+                <div class="order_button">order</div>
+    </section>
+
+    
+    <div class="loader">
+        <i class="fa-solid fa-circle-notch"></i>
     </div>
     <footer>
+        <h4 class="footer_logo">ohmyfood</h4>
         <ul>
-           <li><img src="ohmyfood_image/images/logo/ohmyfood.png" alt="logo"></li>
-           <li><i class="fa-solid fa-utensils"></i> Suggest a restaurant</li>
-           <li><i class="fa-solid fa-handshake-angle"></i> Become a partner</li>
-           <li>legal</li>
-           <li>contact</li>
+
+            <li><a href="#"><i class="fa-solid fa-utensils"></i> Suggest a restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Become a partner</a></li>
+            <li><a href="#">legal</a></li>
+            <li><a href="mailto:contact@goodie.com">contact</a></li> 
         </ul>
     </footer>
 </body>
+
 </html>

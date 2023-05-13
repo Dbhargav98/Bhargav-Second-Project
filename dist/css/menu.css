@@ -897,6 +897,13 @@ img {
   white-space: nowrap;
 }
 
+.card_description h4 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .price {
   position: relative;
   width: 25%;
@@ -1066,6 +1073,7 @@ img {
   }
   .card {
     width: 75%;
+    max-width: 500px;
   }
   .order_button {
     width: 150px;
@@ -1075,6 +1083,7 @@ img {
 @media screen and (min-width: 992px) {
   .card {
     width: 31.5%;
+    min-width: 311px;
   }
   .menu_cards {
     flex-direction: row;
