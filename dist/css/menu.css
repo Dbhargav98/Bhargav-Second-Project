@@ -1043,6 +1043,11 @@ img {
   animation-delay: 2s;
 }
 
+#card10 {
+  animation: foodmenu 2s 1 backwards;
+  animation-delay: 2.2s;
+}
+
 @keyframes foodmenu {
   0% {
     visibility: hidden;
@@ -1081,11 +1086,11 @@ img {
 }
 @media screen and (min-width: 992px) {
   .card {
-    width: 31.5%;
+    width: 350px;
   }
   .menu_cards {
     flex-direction: row;
     justify-content: flex-start;
-    margin: 20px;
+    margin: 20px auto;
   }
 }/*# sourceMappingURL=menu.css.map */
