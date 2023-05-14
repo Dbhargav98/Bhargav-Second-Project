@@ -908,6 +908,7 @@ img {
   position: relative;
   width: 25%;
   flex: none;
+  font-weight: bold;
 }
 
 .price span {

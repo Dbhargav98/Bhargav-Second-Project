@@ -119,6 +119,7 @@ img {
     position: relative;
     width:25%;
     flex: none;
+    font-weight:bold;
     
 }
 .price span{
@@ -142,11 +143,13 @@ img {
 
 .card:hover .TickWrapper i {
     animation: spin 1s forwards 1;
+
 }
 
 .card:hover .TickWrapper {
     animation: slideLeft 1s forwards 1;
     display: flex;
+    
 }
 .card:hover .card_description{
     width: 55%; 

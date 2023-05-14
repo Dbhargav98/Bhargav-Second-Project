@@ -658,5 +658,7 @@ span {
 @media screen and (min-width: 992px) {
   .nav_button {
     width: 27%;
+    min-width: 280px;
+    max-width: 380px;
   }
 }/*# sourceMappingURL=homepage.css.map */
