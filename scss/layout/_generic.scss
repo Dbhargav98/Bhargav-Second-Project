@@ -70,33 +70,22 @@ li i {
     margin-right: 10px;
 }
 
-.loader {
-    position: fixed;
-    z-index: 2;
-    font-size: 6em;
-    color: grey;
-    top: 40%;
-    left: 40%;
-    animation: spin ease-in 1s infinite, fadeOut ease-out 3s 1 forwards;
-}
+
 
 img {
     object-fit: cover;
 }
 
-.heart--red {
-    color: red;
-    opacity: 0%;
-    font-size: x-large;
-}
+
 
 .fa-heart {
     font-size: x-large;
 }
 
 .heart--red {
-    color: red;
+    color: linear-gradient(to top, #FF79DA, #9356DC);
     opacity: 0%;
+    font-size: x-large;
 }
 
 .heart-wrap {
@@ -114,8 +103,6 @@ img {
 }
 
 
-
-
 @keyframes fadeOut {
     0% {
         visibility: visible;
@@ -128,12 +115,4 @@ img {
     }
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
+    

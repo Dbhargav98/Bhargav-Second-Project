@@ -122,11 +122,12 @@ header {
 
 span {
     display: inline-block;
+    font-weight: 800;
+    font-family: $font_text;
 }
 .nav_button i{
     font-size: 1.4em;
 }
-
 
 .restaurant {
     padding: 10px;
@@ -173,6 +174,39 @@ span {
     width: 100%;
     height: 80%;
 }
+.loader {
+    position: fixed;
+    z-index: 2;
+    font-size: 6em;
+    color: grey;
+    background-color: white;
+    top: 50%;
+    left: 40%;
+    animation: spin ease-in 1s infinite, fadeOut ease-out 3s 1 forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        visibility: visible;
+        opacity: 100%;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (min-width:768px){
     .logo{
         font-size: 60px;
