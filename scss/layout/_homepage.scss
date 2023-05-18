@@ -1,17 +1,17 @@
-
-
 a {
     text-decoration: none;
     color: black;
 }
+
 .homepage_header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .location {
-    width:100%;
+    width: 100%;
     background-color: #E0E0E0;
     display: flex;
     flex-direction: row;
@@ -51,6 +51,8 @@ a {
     gap: 4em;
 }
 
+header,
+footer,
 .sectionPad,
 .discription,
 .restaurant {
@@ -92,6 +94,7 @@ a {
     height: 80px;
     box-shadow: 3px 3px 3px #808080;
 }
+
 .nav_number {
     background-color: $primaryColor;
     border-radius: 50%;
@@ -111,13 +114,14 @@ a {
     padding: 0 10px;
 }
 
-.nav_button:hover{      
+.nav_button:hover {
     background-color: rgb(235, 221, 247);
     color: $primaryColor;
-    ._icon:hover{
+
+    ._icon:hover {
         color: $primaryColor;
     }
-    
+
 }
 
 span {
@@ -125,7 +129,8 @@ span {
     font-weight: 800;
     font-family: $font_text;
 }
-.nav_button i{
+
+.nav_button i {
     font-size: 1.4em;
 }
 
@@ -152,7 +157,7 @@ span {
     position: relative;
 }
 
-.new_label{
+.new_label {
     width: 110px;
     background-color: $tertiaryColor;
     text-align: center;
@@ -161,8 +166,9 @@ span {
     right: 20px;
     font-size: large;
     padding: 10px 0px;
-    font-family: $font_text;  
+    font-family: $font_text;
 }
+
 .restaurant_information {
     display: flex;
     flex-direction: row;
@@ -174,12 +180,13 @@ span {
     width: 100%;
     height: 80%;
 }
+
 .loader {
     position: fixed;
     z-index: 2;
     font-size: 6em;
     color: grey;
-   
+
     top: 50%;
     left: 40%;
     animation: spin ease-in 1s infinite, fadeOut ease-out 3s 1 forwards;
@@ -207,36 +214,43 @@ span {
     }
 }
 
-@media screen and (min-width:768px){
-    .logo{
+@media screen and (min-width:768px) {
+    .logo {
         font-size: 60px;
     }
-    .nav_button{
+
+    .nav_button {
         width: 70%;
     }
-    .discription{
-        font-size:150%; 
+
+    .discription {
+        font-size: 150%;
     }
+
     .discription p {
         line-height: 1.2em;
     }
-    .restaurant_list{
+
+    .restaurant_list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap:4%;
+        gap: 4%;
         margin: 20px;
     }
-    .restaurant_card{
+
+    .restaurant_card {
         width: 45%;
         margin: 20px auto;
     }
-    .footer_logo{
+
+    .footer_logo {
         font-size: x-large;
     }
 }
-@media screen and (min-width:992px){
-    .nav_button{
+
+@media screen and (min-width:992px) {
+    .nav_button {
         width: 27%;
         min-width: 280px;
         max-width: 380px;
