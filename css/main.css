@@ -611,7 +611,6 @@ span {
   z-index: 2;
   font-size: 6em;
   color: grey;
-  background-color: white;
   top: 50%;
   left: 40%;
   animation: spin ease-in 1s infinite, fadeOut ease-out 3s 1 forwards;
