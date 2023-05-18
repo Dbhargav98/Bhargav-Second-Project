@@ -414,7 +414,7 @@ img {
   display: grid;
 }
 
-.heart-wrap:ac ve .heart--red,
+.heart-wrap:active .heart--red,
 .heart-wrap:hover .heart--red {
   animation: fadeOut 1s 1 forwards reverse;
 }
