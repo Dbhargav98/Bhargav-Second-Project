@@ -1,4 +1,4 @@
-@import "generic.scss";
+
 
 
 a {
@@ -141,12 +141,12 @@ img {
 }
 
 .card:hover .TickWrapper i {
-    animation: spin 1s forwards 1,spin 1s backwards 1;
+    animation: spin 1s forwards 1;
 
 }
 
 .card:hover .TickWrapper {
-    animation: slideLeft 1s forwards 1, slidright 1s backwards;
+    animation: slideLeft 1s forwards 1;
     display: flex;
     
 }
@@ -187,15 +187,7 @@ img {
         transform: translateX(0);
     }
 }
-@keyframes slidright{
-    0% {
-        transform: translateX(0%);
-    }
 
-    100% {
-        transform: translateX(100%);
-    }
-}
 @keyframes fadeOut {
     0% {
         visibility: visible;
