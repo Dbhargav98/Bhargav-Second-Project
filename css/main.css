@@ -922,10 +922,12 @@ img {
   0% {
     visibility: hidden;
     opacity: 0%;
+    transform: translateY(50px);
   }
   100% {
     visibility: visible;
     opacity: 100%;
+    transform: translateY(0px);
   }
 }
 @media screen and (min-width: 768px) {
