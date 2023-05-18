@@ -414,7 +414,7 @@ img {
   display: grid;
 }
 
-.heart-wrap:active .heart--red,
+.heart-wrap:ac ve .heart--red,
 .heart-wrap:hover .heart--red {
   animation: fadeOut 1s 1 forwards reverse;
 }
@@ -553,12 +553,6 @@ footer,
 }
 .nav_button:hover ._icon:hover {
   color: #9356DC;
-}
-
-span {
-  display: inline-block;
-  font-weight: 800;
-  font-family: "Roboto", sans serif;
 }
 
 .nav_button i {
@@ -767,7 +761,7 @@ img {
   justify-content: space-between;
   gap: 0.5em;
   padding: 0.75em 0em 0.75em 0.75em;
-  width: 70%;
+  width: 60%;
 }
 
 .card_description p {
@@ -780,8 +774,8 @@ img {
 .card_description h4 {
   width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .price {
@@ -789,6 +783,7 @@ img {
   width: 25%;
   flex: none;
   font-weight: bold;
+  transition: transform 2s;
 }
 
 .price span {
@@ -807,20 +802,21 @@ img {
   font-size: 1.6em;
   color: white;
   transform: translateX(100%);
+  transition: transform 2s;
 }
 
 .card:hover .TickWrapper i {
-  animation: spin 1s forwards 1;
+  animation: spin 2s forwards 1;
 }
 
 .card:hover .TickWrapper {
-  animation: slideLeft 1s forwards 1;
-  display: flex;
+  opacity: 1;
+  transition: transform 2s;
+  transform: translateX(0%);
 }
 
-.card:hover .card_description {
-  width: 55%;
-  transition: width 1000ms, background-color 1500ms;
+.card:hover .price {
+  transform: translateX(-30%);
 }
 
 .order_button {
@@ -842,14 +838,6 @@ img {
   filter: brightness(80%);
 }
 
-@keyframes slideLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 @keyframes fadeOut {
   0% {
     visibility: visible;
