@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -83,13 +81,19 @@ img {
 }
 
 .heart--red {
-    color: linear-gradient(to top, #FF79DA, #9356DC);
+   
     opacity: 0%;
     font-size: x-large;
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .heart-wrap {
     display: grid;
+
+
 }
 
 .heart-wrap:active .heart--red,
@@ -114,5 +118,3 @@ img {
         opacity: 0%;
     }
 }
-
-    

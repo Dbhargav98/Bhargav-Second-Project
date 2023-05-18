@@ -402,9 +402,12 @@ img {
 }
 
 .heart--red {
-  color: linear-gradient(to top, #FF79DA, #9356DC);
   opacity: 0%;
   font-size: x-large;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heart-wrap {
